@@ -1,0 +1,125 @@
+{
+  "book_now": "Book Now",
+  "processing": "Booking...",
+  "book_appointment": "Book Appointment",
+  "view_services": "View Services",
+  "select_date": "Select Date",
+  "date_selected": "Date selected: {{date}}",
+  "date": "Date",
+  "time": "Time",
+  "name": "Name",
+  "email": "Email",
+  "phone": "Phone",
+  "select_time": "Select Time",
+  "fully_booked": "Fully Booked",
+  "leave_review": "Leave a Review",
+  "services": "Services",
+  "contact": "Contact",
+  "quick_links": "Quick Links",
+  "about_us": "About Us",
+  "address_line1": "123 Saryan Street",
+  "address_line2": "Yerevan, Armenia 0012",
+  "next": "Next",
+  "go_back": "Go Back",
+  "plase_wait": "Please wait...",
+  "no_available_slots": "No available slots for the selected date. Please choose another date.",
+  "select_time_slot": "Please select a time slot.",
+  "no_date_selected": "No date selected. Please select a date first.",
+  "booking_failed": "Booking failed. Please try again later.",
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "reviews": "Reviews"
+  },
+  "established": {
+    "Est.": "Est.",
+    "location": "Yerevan, Armenia"
+  },
+  "look_sharp": "Look Sharp",
+  "feel_confident": "Feel Confident",
+  "hero_desc": "Experience the art of grooming at our barbershop. Book your appointment now and step into a world of style and confidence.",
+  "about": {
+    "caption": "Our Story",
+    "title": "More Than Just",
+    "title_bold": "A Haircut",
+    "description": {
+      "part1": "Founded on the principles of traditional craftsmanship and modern style, The Gentleman's Cut is a sanctuary for the modern man. We believe that grooming is an essential ritual, not a chore.",
+      "part2": "Our master barbers have over 20 years of combined experience, mastering everything from classic scissor cuts to intricate fades and hot towel shaves."
+    },
+    "Master Barbers": "Master Barbers",
+    "Premium Products": "Premium Products",
+    "Relaxing Atmosphere": "Relaxing Atmosphere",
+    "Complimentary Drinks": "Complimentary Drinks"
+  },
+  "service": {
+    "caption": "Our Menu",
+    "title": "Precision Services",
+    "description": "Tailored grooming services designed to make you look and feel your absolute best.",
+    "Signature Haircut": {
+      "name": "Signature Haircut",
+      "description": "Precision cut, hot towel finish, and styling advice."
+    },
+    "Beard Trim & Shape": {
+      "name": "Beard Trim & Shape",
+      "description": "Sculpting, lining, and conditioning for the perfect beard."
+    },
+    "Hot Towel Shave": {
+      "name": "Hot Towel Shave",
+      "description": "Traditional straight razor shave with essential oils."
+    },
+    "The Gentleman's Combo": {
+      "name": "The Gentleman's Combo",
+      "description": "Full haircut and shave service with premium treatment."
+    }
+  },
+  "reviews": {
+    "caption": "Testimonials",
+    "title": "Client Stories",
+    "Michael Roberts": {
+      "name": "Michael Roberts",
+      "text": "Best haircut I've had in years. The attention to detail is unmatched. The atmosphere is fantastic, a true gentleman's lounge.",
+      "role": "Regular Client"
+    },
+    "James Anderson": {
+      "name": "James Anderson",
+      "text": "Found this place by accident and now I won't go anywhere else. Great conversation, professional service, and a perfect fade.",
+      "role": "Local Resident"
+    },
+    "David Chen": {
+      "name": "David Chen",
+      "text": "Top notch experience. The hot towel shave is an absolute must-try. Highly recommended for anyone looking for quality.",
+      "role": "Business Professional"
+    },
+    "Marcus Johnson": {
+      "name": "Marcus Johnson",
+      "text": "Finally a barber who listens to what you want. Clean shop, great vibes, and skilled barbers. 10/10.",
+      "role": "Software Engineer"
+    }
+  },
+  "footer": {
+    "description": "Elevating the standard of men's grooming. We provide more than just a haircut: we provide an experience of classic luxury and modern style.",
+    "copyright": "All rights reserved.",
+    "privacy_policy": "Privacy Policy",
+    "terms_of_service": "Terms of Service"
+  },
+  "calendar": {
+    "today": "Today"
+  },
+  "booking": {
+    "user_booking": "User Booking",
+    "info": "Please fill out all required fields",
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "email": "Email",
+    "phone_number": "Phone Number",
+    "agree_terms": "I agree to the terms and conditions"
+  },
+  "confirmation": {
+    "title": "Booking Confirmed!",
+    "message": "Thank you for booking with us. We look forward to giving you an exceptional grooming experience.",
+    "details": "Your appointment details:",
+    "late_message": "Please don't be late for your appointment.",
+    "back_to_home": "Back to Home"
+  }
+}

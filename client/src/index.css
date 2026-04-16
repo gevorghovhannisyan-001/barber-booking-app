@@ -1,0 +1,234 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root {
+  /* Dark, Masculine Palette */
+  /* Background: Almost Black / Dark Gray */
+  --background: hsl(220 13% 10%); 
+  /* Foreground: Off-white/Cream */
+  --foreground: hsl(40 20% 94%);
+
+  /* Primary: Gold/Brass */
+  --primary: hsl(45 93% 47%);
+  --primary-foreground: hsl(220 13% 10%);
+
+  /* Secondary: Dark Gray/Charcoal */
+  --secondary: hsl(220 13% 18%);
+  --secondary-foreground: hsl(40 20% 94%);
+
+  /* Selected States */
+  --time-selected: hsl(210 100% 97%);
+  --selected-foreground: hsl(220 13% 10%);
+
+  /* Muted: Lighter Gray */
+  --muted: hsl(220 13% 25%);
+  --muted-foreground: hsl(220 10% 65%);
+
+  /* Accent: Rich Brown / Leather */
+  --accent: hsl(25 35% 35%);
+  --accent-foreground: hsl(40 20% 94%);
+
+  /* Destructive */
+  --destructive: hsl(0 62% 30%);
+  --destructive-foreground: hsl(40 20% 94%);
+
+  /* Fully Booked */
+  --fully-booked: #ff000075; /* Semi-transparent red */
+
+  /* Borders */
+  --border: hsl(220 13% 20%);
+  --input: hsl(220 13% 20%);
+  --ring: hsl(45 93% 47%);
+
+  /* Cards */
+  --card: hsl(220 13% 12%);
+  --card-foreground: hsl(40 20% 94%);
+  --card-border: hsl(220 13% 20%);
+
+  /* Popovers */
+  --popover: hsl(220 13% 12%);
+  --popover-foreground: hsl(40 20% 94%);
+  --popover-border: hsl(220 13% 20%);
+
+  /* Sidebar (if needed) */
+  --sidebar: hsl(220 13% 10%);
+  --sidebar-foreground: hsl(40 20% 94%);
+  --sidebar-primary: hsl(45 93% 47%);
+  --sidebar-primary-foreground: hsl(220 13% 10%);
+  --sidebar-accent: hsl(220 13% 18%);
+  --sidebar-accent-foreground: hsl(40 20% 94%);
+  --sidebar-border: hsl(220 13% 20%);
+  --sidebar-ring: hsl(45 93% 47%);
+
+  --radius: 0rem; /* Sharp edges for masculine feel */
+}
+
+.dark {
+  /* Same as root since it's a dark-themed site by default */
+  --background: hsl(220 13% 10%);
+  --foreground: hsl(40 20% 94%);
+  --primary: hsl(45 93% 47%);
+  --primary-foreground: hsl(220 13% 10%);
+  --secondary: hsl(220 13% 18%);
+  --secondary-foreground: hsl(40 20% 94%);
+  --time-selected: hsl(210 100% 97%);
+  --muted: hsl(220 13% 25%);
+  --muted-foreground: hsl(220 10% 65%);
+  --accent: hsl(25 35% 35%);
+  --accent-foreground: hsl(40 20% 94%);
+  --destructive: hsl(0 62% 30%);
+  --destructive-foreground: hsl(40 20% 94%);
+  --fully-booked: #ff000075;
+  --border: hsl(220 13% 20%);
+  --input: hsl(220 13% 20%);
+  --ring: hsl(45 93% 47%);
+  --card: hsl(220 13% 12%);
+  --card-foreground: hsl(40 20% 94%);
+  --popover: hsl(220 13% 12%);
+  --popover-foreground: hsl(40 20% 94%);
+}
+
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-time-selected: var(--time-selected);
+  --color-selected-foreground: var(--selected-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-fully-booked: var(--fully-booked);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-card-border: var(--card-border);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover-border: var(--popover-border);
+
+  --font-sans: "Inter", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-mono: "Fira Code", monospace;
+
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  --color-sidebar-primary-border: var(--sidebar-primary-border);
+  --color-sidebar-accent-border: var(--sidebar-accent-border);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  @keyframes accordion-down {
+    from { height: 0; }
+    to { height: var(--radix-accordion-content-height); }
+  }
+  @keyframes accordion-up {
+    from { height: var(--radix-accordion-content-height); }
+    to { height: 0; }
+  }
+}
+
+@layer base {
+    * {
+        box-sizing: border-box;
+        border-color: var(--border);
+    }
+
+    body {
+        @apply font-sans antialiased bg-background text-foreground;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      @apply font-serif;
+    }
+
+    input {
+      @apply bg-card text-foreground border border-border rounded px-3 py-2 outline-none focus:border-primary;
+    }
+}
+
+/* tailwind override */
+.fc {
+  @apply p-2 bg-card;
+}
+
+.fc .fc-button {
+  @apply bg-secondary text-white border border-gray-500 rounded-lg px-3 py-1 transition-all duration-300 my-2 ml-2
+}
+
+.fc .fc-daygrid-day {
+  @apply border border-gray-500;
+}
+
+.fc .fc-scrollgrid {
+  @apply border border-gray-500;
+}
+
+.fc .fc-col-header-cell {
+  @apply border border-gray-500;
+}
+
+.fc .fc-button:last-child {
+  @apply mr-2;
+}
+
+.fc .fc-today-button:disabled {
+  @apply bg-muted cursor-not-allowed text-muted-foreground border border-gray-400 opacity-[0.6];
+}
+
+.fc .fc-prev-button:hover, 
+.fc .fc-next-button:hover,
+.fc .fc-today-button:not(:disabled):hover {
+  @apply bg-secondary-foreground text-black border border-gray-500 cursor-pointer;
+}
+
+.fc .day-selected {
+  @apply bg-secondary text-white
+  transition-all duration-200 ease-in-out;
+}
+
+.fc .selected-label {
+  @apply absolute bottom-1 right-1 bg-blue-500 text-white text-[10px] px-1.5 py-[1px] rounded pointer-events-none;
+}
+
+.fc .fc-day-other, .fc-day-past {
+  @apply bg-gray-950 text-gray-400 cursor-not-allowed opacity-[0.6];
+}
+
+.fc .fc-day-disabled {
+  @apply bg-gray-950 text-gray-400 cursor-not-allowed opacity-[0.6];
+}
+
+.fc .fully-booked {
+  @apply bg-fully-booked text-red-500 border-2 border-red-500 max-lg:h-auto h-[180px] w-auto cursor-not-allowed;
+}
+
+@utility special-button {
+  @apply bg-secondary text-white w-[max-content] py-2 px-4 max-[450px]:px-2 max-[450px]:py-1
+  border border-gray-500 fixed bottom-[20px] z-[1000] cursor-pointer
+  hover:bg-muted shadow-md shadow-background  transition-all ease-in-out;
+}
