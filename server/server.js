@@ -28,7 +28,7 @@ app.use(cookieParser());
 app.use(morgan("dev"));
 
 app.use(cors({
-  origin: process.env.FRONTEND_URL || "http://localhost:5173",
+  origin: process.env.FRONTEND_URL || "https://barber-booking-app-git-main-hovhannigevorg-2540s-projects.vercel.app/",
   credentials: true,
 }));
 
